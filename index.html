@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Drawing Pad | Vk Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="options">
+            <div class="opt-wrapper">
+                <div class="slider">
+                    <label for="width-range">Grid Width</label>
+                    <input type="range" name="width-range" id="width-range" min="1" max="40">
+                    <span id="width-range-val">00</span>
+                </div>
+                <div class="slider">
+                    <label for="height-range">Grid Height</label>
+                    <input type="range" name="height-range" id="height-range" min="1" max="40">
+                    <span id="height-range-val">00</span>
+                </div>
+            </div>
+            <div class="opt-wrapper">
+                <button type="button" id="create-grid">Create Grid</button>
+                <button type="button" id="clear-grid">Clear Grid</button>
+                <input type="color" name="color-picker" id="color-picker">
+                <button type="button" id="erase-btn">Erase</button>
+                <button type="button" id="paint-btn">Paint</button>
+            </div>
+        </div>
+        <div id="draw-container"></div>
+    </div>
+</body>
+</html>
